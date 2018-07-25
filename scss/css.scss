@@ -1,0 +1,318 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 14, 2018, 1:16:38 PM
+    Author     : hymera
+*/
+.site-content{
+    background-color: #e8e8e8   
+}
+
+
+/*--- fron-content ----*/
+
+.arc-front-content{
+    background-image:url(../img/front-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding-bottom: 350px;
+}
+
+/*--front-content-end---*/
+
+
+.arc-wrapper{
+
+    .pre_nav{
+        position:absolute;
+        z-index:1;
+        left: -50px;
+        top: -10px;
+    }
+
+}
+
+.card{
+    border-radius:0;
+    border:none;
+    box-shadow: rgba(0,0,0,.1) 0 0 12px;
+    background-color: #fff;
+}
+.card-opaque{
+    box-shadow:none;
+    background: rgba(255,255,255,0)
+}
+
+nav{
+    position:relative;
+    z-index:100;
+    a{
+        color:#333;
+    }
+}
+
+
+
+
+
+.loading,.loading>td,.loading>th,.nav li.loading.active>a,.pagination li.loading,.pagination>li.active.loading>a,.pager>li.loading>a{
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+    background-size: 40px 40px;
+    animation: 2s linear 0s normal none infinite progress-bar-stripes;
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+}
+.btn.btn-default.loading,input[type="text"].loading,select.loading,textarea.loading,.well.loading,.list-group-item.loading,.pagination>li.active.loading>a,.pager>li.loading>a{
+    background-image: linear-gradient(45deg, rgba(235, 235, 235, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(235, 235, 235, 0.15) 50%, rgba(235, 235, 235, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+}
+
+
+
+/*--modals---*/
+
+.modal-dialog  {
+
+    .modal-content{
+        border-radius:24px;
+        background:#e6e6e6;
+
+        .modal-title {
+            color:#115240;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+        }
+
+        .modal-header, .modal-footer{
+            border:none;
+        }
+
+        input{
+            background: #e6e6e6;
+            box-shadow: none!important;
+        }
+        label{
+            margin:0;
+        }
+
+
+    }
+
+    .button-group{
+        width:100%;
+        text-align:center;
+        .btn {
+
+        }
+    }
+
+    .modal-footer{
+        padding:0 1em 2em
+    }
+
+
+}
+/*--end-modals---*/
+
+
+.form-control{
+    //background-color: #e8e8e8!important;
+    box-shadow: none!important;
+}
+
+/*--end-bootstrap-override--*/
+
+/*---form-login----*/
+
+#arc_login_username{
+    background:url(../img/phone.png) no-repeat left center;
+    padding-left:32px
+}
+
+
+#arc_login_pass{
+    background:url(../img/lock.png) no-repeat left center;
+    padding-left:32px
+}
+
+
+
+/*---end-form-login----*/
+
+#arc_history{
+    .badge-store{
+        width:8px;
+        height:8px;
+    }
+}
+
+.arc-products{
+    display:none;
+}
+.table-discount{
+    display:table;
+}
+.table-discount tr td:first-child{
+    border-right:1px solid #dee2e6;
+}
+.table-discount tr {
+    td{
+        text-align: center;
+        background: #fff;
+        &:last-child{
+            color:#115240;
+            font-weight: bold;
+        }
+    }
+    &:first-child{
+        td{
+            border-top:none;
+        }
+
+    }
+
+}
+
+.table-discount {
+    .thead-green {
+        th{
+            text-align: center;
+            background:#fff;
+            vertical-align: middle;
+            line-height: 13pt;
+            color:#115240;
+            border: {
+                bottom: none;
+                top: none;
+            }
+            &:first-child{
+                border-right:1px solid #dee2e6;
+            }
+        } 
+
+    } 
+
+}
+
+.arc-user-register{
+    display:none;
+}
+.arc-modal-getcard{
+    display: none;
+}
+
+#arc_history {
+    .badge-store {
+        width: 8px;
+        height: 8px; 
+    }
+}
+
+.arc-footer {
+    .arc-footer-phone{
+        font-size:28pt;
+        color:#999999;
+    }
+}
+
+
+.arc-footer a{
+    font-size:14pt;
+    color:#999999;
+}
+
+.full-width {
+    width: 99vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/*mask*/
+
+mark {
+  &.im-caret {
+    animation: 1s blink step-end infinite !important;
+  }
+  &.im-caret-select {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-right-color: black;
+  }
+
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+
+span.im-static {
+  color: grey;
+}
+
+div.im-colormask {
+  display: inline-block;
+  border-style: inset;
+  border-width: 2px;
+  appearance: textfield;
+  cursor: text;
+  > {
+    input {
+      position: absolute !important;
+      display: inline-block;
+      background-color: transparent;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      transition: background-color 5000s ease-in-out 0s;
+      caret-color: transparent;
+      text-shadow: none;
+      appearance: caret;
+      border-style: none;
+      left: 0;
+      /*calculated*/
+      &:-webkit-autofill {
+        position: absolute !important;
+        display: inline-block;
+        background-color: transparent;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        transition: background-color 5000s ease-in-out 0s;
+        caret-color: transparent;
+        text-shadow: none;
+        appearance: caret;
+        border-style: none;
+        left: 0;
+        /*calculated*/
+      }
+      &:focus {
+        outline: none;
+      }
+      &::selection, &::-moz-selection {
+        background: none;
+      }
+      &:-webkit-autofill ~ div {
+        background-color: rgb(250, 255, 189);
+      }
+    }
+    div {
+      color: black;
+      display: inline-block;
+      width: 100px;
+      /*calculated*/
+    }
+  }
+}
+
+[im-insert="false"] {
+  caret-color: red;
+  caret-shape: block;
+}
